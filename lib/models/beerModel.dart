@@ -16,11 +16,11 @@ class BeerModel {
   String imageUrl;
 
   BeerModel({
-    @required this.id,
-    @required this.name,
-    @required this.tagline,
-    @required this.description,
-    @required this.imageUrl,
+    required this.id,
+    required this.name,
+    required this.tagline,
+    required this.description,
+    required this.imageUrl,
   });
 
   factory BeerModel.fromJson(Map<String, dynamic> json) =>

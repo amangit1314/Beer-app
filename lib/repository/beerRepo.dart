@@ -12,7 +12,7 @@ class BeerRepository {
   }
 
   Future<dynamic> getBeers({
-    @required int page,
+    required int page,
   }) async {
     try {
       return await http.get(

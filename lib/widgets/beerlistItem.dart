@@ -22,17 +22,15 @@ class BeerListItem extends StatelessWidget {
           textAlign: TextAlign.justify,
         ),
         const SizedBox(height: 20),
-        beer?.imageUrl == null
-            ? Container()
-            : Image.network(
-                beer.imageUrl,
-                loadingBuilder: (context, widget, imageChunkEvent) {
-                  return imageChunkEvent == null
-                      ? widget
-                      : CircularProgressIndicator();
-                },
-                height: 300,
-              ),
+        Image.network(
+          beer.imageUrl,
+          loadingBuilder: (context, widget, imageChunkEvent) {
+            return imageChunkEvent == null
+                ? widget
+                : CircularProgressIndicator();
+          },
+          height: 300,
+        ),
       ],
     );
   }

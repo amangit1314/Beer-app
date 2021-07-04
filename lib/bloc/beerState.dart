@@ -13,7 +13,7 @@ class BeerLoadingState extends BeerState {
   final String message;
 
   const BeerLoadingState({
-    @required this.message,
+    required this.message,
   });
 }
 
@@ -21,7 +21,7 @@ class BeerSuccessState extends BeerState {
   final List<BeerModel> beers;
 
   const BeerSuccessState({
-    @required this.beers,
+    required this.beers,
   });
 }
 
@@ -29,6 +29,6 @@ class BeerErrorState extends BeerState {
   final String error;
 
   const BeerErrorState({
-    @required this.error,
+    required this.error,
   });
 }

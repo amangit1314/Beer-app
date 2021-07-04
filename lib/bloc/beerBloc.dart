@@ -14,7 +14,7 @@ class BeerBloc extends Bloc<BeerEvent, BeerState> {
   bool isFetching = false;
 
   BeerBloc({
-    @required this.beerRepository,
+    required this.beerRepository,
   }) : super(BeerInitialState());
 
   @override
